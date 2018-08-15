@@ -1,0 +1,7 @@
+<h1>Notifications#show</h1>
+<p>Find me in app/views/notifications/show.html.erb</p>
+
+<%= @notification.check %>
+
+
+<%= link_to "Label", :controller => :notifications, :action => :toggle_check, notification_id: @notification.id %>
